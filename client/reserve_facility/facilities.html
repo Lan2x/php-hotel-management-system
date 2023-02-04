@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./facilities.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="../modalStyle.css" />
+    <title>Facilities</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand" style="margin-top: 30px"
+        ><img src="../logo2.jpg" style="width: 120px; margin-left: 0px" />
+        <span style="color: #1a3f99; font-size: 17px"
+          >Hotel Management System</span
+        >
+      </a>
+      <ul class="side-menu">
+        <li class="divider" data-text="main">Main</li>
+
+        <li>
+          <a href="../employees/employee.html"
+            ><i class="bx bxs-user icon"></i> Employees</a
+          >
+        </li>
+
+        <li>
+          <a href="#"
+            ><i class="bx bxs-building icon"></i> Reservations
+            <i class="bx bx-chevron-right icon-right"></i
+          ></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="../reserve_facility/facilities.html">Reserve Facility</a>
+            </li>
+            <li><a href="../reserve_room/rooms.html">Reserve Room</a></li>
+            <li><a href="../reserve_food/food.html">Reserve Food</a></li>
+          </ul>
+        </li>
+
+        <li class="divider" data-text="Others">Others</li>
+        <li>
+          <a href="../add_room/rooms.html"
+            ><i class="bx bxs-door-open icon"></i> Add Room</a
+          >
+        </li>
+        <li>
+          <a href="../addRoomService/roomServices.html"
+            ><i class="bx bxs-door-open icon"></i> Add Room Services</a
+          >
+        </li>
+        <li>
+          <a href="../add_food/food.html"
+            ><i class="bx bxs-food-menu icon"></i> Add Food</a
+          >
+        </li>
+        <li>
+          <a href="../add_facility/facilities.html"
+            ><i class="bx bxs-building icon"></i> Add Facilities</a
+          >
+        </li>
+        <li class="divider" data-text="Utility">Utility</li>
+
+        <li>
+          <a href="../index.html" id="logoutBtn"
+            ><i class="bx bx-log-out icon"></i> Logout</a
+          >
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu toggle-sidebar"></i>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search icon"></i>
+          </div>
+        </form>
+        <a href="#" class="nav-link">
+          <i class="bx bxs-bell icon"></i>
+          <span class="badge">5</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="bx bxs-message-square-dots icon"></i>
+          <span class="badge">8</span>
+        </a>
+        <span class="divider"></span>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">FACILITIES</h1>
+        <div class="info-data">
+          <div class="card">
+            <div class="head"></div>
+            <form>
+              <span style="font-size: 20px">Customer Details</span>
+              <br />
+              <div class="firstRow" style="margin-top: 20px">
+                <div class="input-field">
+                  <label>First name</label>
+                  <input type="text" required id="first_name" placeholder="" />
+                </div>
+
+                <div class="input-field">
+                  <label>Last name</label>
+                  <input type="text" required id="last_name" placeholder="" />
+                </div>
+                <div class="input-field">
+                  <label>Gender</label>
+                  <select id="gender" required>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="secondRow" style="margin-bottom: 20px">
+                <div class="input-field">
+                  <label>Address</label>
+                  <input type="text" required id="address" placeholder="" />
+                </div>
+                <div class="input-field">
+                  <label>Contact No.</label>
+                  <input type="text" required id="contact_no" placeholder="" />
+                </div>
+                <div class="input-field">
+                  <label>Zip Code</label>
+                  <input type="text" required id="zip_code" placeholder="" />
+                </div>
+              </div>
+              <span style="font-size: 20px">Reservation Details</span>
+              <div class="firstRow" style="margin-top: 20px">
+                <div class="input-field">
+                  <label>Facility</label>
+                  <select id="facility" required>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <label>Time In</label>
+                  <input type="date" required id="time_in" placeholder="" />
+                </div>
+                <div class="input-field">
+                  <label>Time out</label>
+                  <input type="date" required id="time_out" placeholder="" />
+                </div>
+              </div>
+              <div class="secondRow"></div>
+              <div class="firstRow" style="margin-top: 20px">
+                <div class="input-field">
+                  <label>Num of Adults</label>
+                  <input type="text" required id="num_adults" placeholder="" />
+                </div>
+                <div class="input-field">
+                  <label>Num of Children</label>
+                  <input type="text" id="num_children" />
+                </div>
+              </div>
+              <div class="secondRow" style="margin-bottom: 20px">
+                <div class="input-field">
+                  <label>Total Payment Amount</label>
+                  <input type="text" id="total_payment_amount" />
+                </div>
+              </div>
+
+              <button class="btn" type="button" id="reserve">
+                <i class="uil uil-message"></i>
+                <span class="btnText">Reserve Facility</span>
+              </button>
+            </form>
+
+            <div
+              id="myGrid"
+              style="height: 500px; width: 100%"
+              class="ag-theme-alpine"
+            ></div>
+            <div
+              style="display: flex; width: 60%; justify-content: space-evenly"
+            >
+              <button
+                class="btn"
+                style="background: rgb(0, 34, 255)"
+                type="submit"
+                id="checkInBtn"
+              >
+                <i class="uil uil-check"></i>
+                <span class="btnText">Check In</span>
+              </button>
+              <a href="#ex1" class="btn" rel="modal:open">
+                <button
+                  class="btn"
+                  style="background: rgb(0, 34, 255)"
+                  type="button"
+                  id="checkOutBtn"
+                  rel="modal:open"
+                >
+                  <i class="uil uil-x"></i>
+                  <span class="btnText">Check Out</span>
+                </button>
+              </a>
+              <button
+                class="btn"
+                style="background: rgb(210, 28, 28)"
+                type="submit"
+                id="delete"
+              >
+                <i class="uil uil-x"></i>
+                <span class="btnText">Delete</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div id="ex1" class="modal">
+        <div class="modalRow" style="margin-top: 20px">
+          <div class="input-field">
+            <label>PDWD</label>
+            <select id="pdwd">
+              <option value="0%">No</option>
+              <option value="10">Yes</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label>Discount</label>
+            <input
+              type="text"
+              required
+              id="discount"
+              value="0"
+              disabled
+              placeholder=""
+            />
+          </div>
+
+          <div class="input-field">
+            <label>Amount to Pay</label>
+            <input type="text" required id="amount_paid" placeholder="" />
+          </div>
+        </div>
+        <button
+          class="btn"
+          style="background: rgb(63, 2, 217); margin: auto; margin-top: 15px"
+          type="button"
+          id="paymentBtn"
+        >
+          <i class="uil uil-x"></i>
+          <span class="btnText">Pay</span>
+        </button>
+      </div>
+
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="../ag-grid-community.min.js"></script>
+    <script src="../jquery.js"></script>
+    <script type="text/javascript" src="../jquery.leanModal.min.js"></script>
+    <script src="./facilities.js"></script>
+  </body>
+</html>

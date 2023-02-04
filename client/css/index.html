@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body bgcolor="#9D31F7">
+    <br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br />
+    <center>
+      <div style="border: 2px solid black; width: 40%; background: white">
+        <h1>LOGIN FORM</h1>
+
+        <input type="text" placeholder="username" />
+        <br />
+        <br />
+        <input type="password" placeholder="password" />
+        <br />
+        <br />
+        <input type="button" id="button" value="submit" />
+        <br />
+        <br />
+        <br />
+      </div>
+    </center>
+  </body>
+
+  <script>
+    document.getElementById("button").addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "./home.html";
+    });
+  </script>
+</html>

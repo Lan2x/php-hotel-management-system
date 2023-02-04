@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reservations.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Reservations</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand" style="margin-top: 30px"
+        ><img src="../logo2.jpg" style="width: 120px; margin-left: 0px" />
+        <span style="color: #1a3f99; font-size: 17px"
+          >Hotel Management System</span
+        >
+      </a>
+      <ul class="side-menu">
+        <li class="divider" data-text="main">Main</li>
+
+        <li>
+          <a href="../employees/employee.html"
+            ><i class="bx bxs-user icon"></i> Employees</a
+          >
+        </li>
+
+        <li>
+          <a href="../customers/customer.html"
+            ><i class="bx bxs-user-rectangle icon"></i> Customers</a
+          >
+        </li>
+        <li>
+          <a href="../reservations/reservations.html"
+            ><i class="bx bxs-report icon"></i> Reservations</a
+          >
+        </li>
+
+        <li>
+          <a href="../payments/payments.html"
+            ><i class="bx bxs-credit-card icon"></i> Payments</a
+          >
+        </li>
+        <li class="divider" data-text="Others">Others</li>
+        <li>
+          <a href="../rooms/rooms.html"
+            ><i class="bx bxs-door-open icon"></i> Add Room</a
+          >
+        </li>
+        <li>
+          <a href="../roomServices/roomServices.html"
+            ><i class="bx bxs-door-open icon"></i> Add Room Services</a
+          >
+        </li>
+        <li>
+          <a href="../food/food.html"
+            ><i class="bx bxs-food-menu icon"></i> Add Food</a
+          >
+        </li>
+        <li>
+          <a href="../facilities/facilities.html"
+            ><i class="bx bxs-building icon"></i> Add Facilities</a
+          >
+        </li>
+        <li class="divider" data-text="Utility">Utility</li>
+
+        <li>
+          <a href="../index.html" id="logoutBtn"
+            ><i class="bx bx-log-out icon"></i> Logout</a
+          >
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu toggle-sidebar"></i>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search icon"></i>
+          </div>
+        </form>
+        <a href="#" class="nav-link">
+          <i class="bx bxs-bell icon"></i>
+          <span class="badge">5</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="bx bxs-message-square-dots icon"></i>
+          <span class="badge">8</span>
+        </a>
+        <span class="divider"></span>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">RESERVATIONS</h1>
+        <div class="info-data">
+          <div class="card">
+            <div class="head"></div>
+            <form>
+              <div class="firstRow">
+                <div class="input-field">
+                  <label>Customer ID</label>
+                  <select>
+                    <option>customer id 1</option>
+                    <option>customer id 2</option>
+                    <option>customer id 3</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <label>Employee ID</label>
+                  <select>
+                    <option>employee id 1</option>
+                    <option>employee id 2</option>
+                    <option>employee id 3</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <label>Reservation Date</label>
+                  <input
+                    type="datetime-local"
+                    required
+                    id="lastName"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="secondRow">
+                <div class="input-field">
+                  <label>Reservation Date</label>
+                  <input
+                    type="datetime-local"
+                    required
+                    id="lastName"
+                    placeholder=""
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>No. of Adults</label>
+                  <input type="text" required id="username" placeholder="" />
+                </div>
+                <div class="input-field">
+                  <label>No. of Children</label>
+                  <input type="text" required id="username" placeholder="" />
+                </div>
+              </div>
+
+              <div class="secondRow">
+                <div class="input-field">
+                  <label>Food ID</label>
+                  <select id="foodSelect">
+                    <option value="1">food id 1</option>
+                    <option value="2">food id 2</option>
+                    <option value="3">food id 3</option>
+                  </select>
+                  <img
+                    id="foodImage"
+                    style="width: 240px; height: 100px"
+                    src="./food1.jpg"
+                  />
+                </div>
+                <div class="input-field">
+                  <label>Room Service ID</label>
+                  <select id="roomServiceSelect">
+                    <option value="1">service id 1</option>
+                    <option value="2">service id 2</option>
+                  </select>
+                  <img
+                    id="roomServiceImage"
+                    style="width: 240px; height: 100px"
+                    src="./roomService1.jpg"
+                  />
+                </div>
+                <div class="input-field">
+                  <label>Facilities ID</label>
+                  <select id="facilitySelect">
+                    <option value="1">facility id 1</option>
+                    <option value="2">facility id 2</option>
+                    <option value="3">facility id 3</option>
+                  </select>
+                  <img
+                    id="facilityImage"
+                    style="width: 240px; height: 100px"
+                    src="./facility1.jpg"
+                  />
+                </div>
+              </div>
+              <div class="secondRow">
+                <div class="input-field">
+                  <label>Room ID</label>
+                  <select id="roomSelect">
+                    <option value="1">room id 1</option>
+                    <option value="2">room id 2</option>
+                    <option value="3">room id 3</option>
+                  </select>
+                  <img
+                    id="roomImage"
+                    style="width: 240px; height: 100px"
+                    src="./1.jpg"
+                  />
+                </div>
+              </div>
+
+              <div class="secondRow" style="margin-top: 50px">
+                <div class="input-field">
+                  <label>Price</label>
+                  <input type="text" placeholder="₱0.00" />
+                </div>
+              </div>
+
+              <button class="btn" type="submit" id="registerUser">
+                <i class="uil uil-message"></i>
+                <span class="btnText">Add Reservation</span>
+              </button>
+            </form>
+
+            <div
+              id="myGrid"
+              style="height: 500px; width: 100%"
+              class="ag-theme-alpine"
+            ></div>
+
+            <!-- Modal start -->
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="title">RESERVATION DETAILS</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">All details of reservation goes here</div>
+            </div>
+            <div id="overlay"></div>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="../ag-grid-community.min.js"></script>
+    <script src="./reservations.js"></script>
+  </body>
+</html>

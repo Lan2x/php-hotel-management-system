@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./beds.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Beds</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand" style="margin-top: 30px"
+        ><img src="../logo2.jpg" style="width: 120px; margin-left: 0px" />
+        <span style="color: #1a3f99; font-size: 17px"
+          >Hotel Management System</span
+        >
+      </a>
+      <ul class="side-menu">
+        <li class="divider" data-text="main">Main</li>
+
+        <li>
+          <a href="../employees/employee.html"
+            ><i class="bx bxs-user icon"></i> Employees</a
+          >
+        </li>
+
+        <li>
+          <a href="#"
+            ><i class="bx bxs-building icon"></i> Reservations
+            <i class="bx bx-chevron-right icon-right"></i
+          ></a>
+          <ul class="side-dropdown">
+            <li>
+              <a href="../reserve_facility/facilities.html">Reserve Facility</a>
+            </li>
+            <li><a href="../reserve_room/rooms.html">Reserve Room</a></li>
+            <li><a href="../reserve_food/food.html">Reserve Food</a></li>
+          </ul>
+        </li>
+
+        <li class="divider" data-text="Others">Others</li>
+        <li>
+          <a href="../add_room/rooms.html"
+            ><i class="bx bxs-door-open icon"></i> Add Room</a
+          >
+        </li>
+        <li>
+          <a href="../addRoomService/roomServices.html"
+            ><i class="bx bxs-door-open icon"></i> Add Room Services</a
+          >
+        </li>
+        <li>
+          <a href="../add_food/food.html"
+            ><i class="bx bxs-food-menu icon"></i> Add Food</a
+          >
+        </li>
+        <li>
+          <a href="../add_facility/facilities.html"
+            ><i class="bx bxs-building icon"></i> Add Facilities</a
+          >
+        </li>
+        <li class="divider" data-text="Utility">Utility</li>
+
+        <li>
+          <a href="../index.html" id="logoutBtn"
+            ><i class="bx bx-log-out icon"></i> Logout</a
+          >
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu toggle-sidebar"></i>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-search icon"></i>
+          </div>
+        </form>
+        <a href="#" class="nav-link">
+          <i class="bx bxs-bell icon"></i>
+          <span class="badge">5</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="bx bxs-message-square-dots icon"></i>
+          <span class="badge">8</span>
+        </a>
+        <span class="divider"></span>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">BED</h1>
+        <div class="info-data">
+          <div class="card">
+            <div class="head"></div>
+            <form>
+              <div class="firstRow">
+                <div class="input-field">
+                  <label>Name</label>
+                  <input type="text" required id="firstName" placeholder="" />
+                </div>
+
+                <div class="input-field">
+                  <label>Type</label>
+                  <input type="text" required id="lastName" placeholder="" />
+                </div>
+
+                <div class="input-field">
+                  <label>Price</label>
+                  <input type="text" required id="lastName" placeholder="" />
+                </div>
+              </div>
+              <div class="secondRow">
+                <div class="input-field">
+                  <label>Room ID</label>
+                  <select id="unit" required>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="btn" type="submit" id="registerUser">
+                <i class="uil uil-message"></i>
+                <span class="btnText">Add Bed</span>
+              </button>
+            </form>
+
+            <div
+              id="myGrid"
+              style="height: 500px; width: 100%"
+              class="ag-theme-alpine"
+            ></div>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="../ag-grid-community.min.js"></script>
+    <script src="./beds.js"></script>
+  </body>
+</html>
